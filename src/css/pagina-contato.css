@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+}
+
+.conteiner {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CONFIGURACAO DO HEADER */
+
+.conteiner {
+    width: 100%;
+    padding: 60px 4%;
+}
+
+
+.conteiner h3 {
+    color: rgb(202, 146, 254);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.conteiner ul {
+    list-style-type: none;
+}
+
+.conteiner ul.menu-desktop li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.conteiner ul.menu-desktop li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.conteiner ul.menu-desktop li a:hover {
+    color: rgb(202, 146, 254);
+    transition: 0.2s;
+}
+
+section.formulario {
+    padding: 80px 4%;
+} 
+
+.conteiner ul.menu-desktop li .icone {
+    font-size: 30px;
+}
+/* CONFIGURAÇÃO DO MENU MOBILE */
+
+.abrirMenu i{
+    color: #fff;
+    font-size: 40px;
+}
+
+.menu-contato {
+    background-color: #000000c1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-contato.abrir-menu {
+    width: 45%;
+}
+
+.menu-contato.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-contato .btn-fechar {
+    padding: 20px 5%;
+
+}
+
+.menu-contato .btn-fechar i{
+    color:  rgb(202, 146, 254);
+    font-size: 30px;
+}
+
+.menu-contato nav ul {
+    text-align: right;
+}
+
+.menu-contato nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-contato nav ul li a:hover {
+    background-color:  rgb(202, 146, 254);
+    color:  #000;
+}
+
+.overlay-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+div#btn-menu {
+    display: none;
+}
+
+/* CONFIGURAÇÃO DO FORMULARIO */
+
+.titulo {
+    text-align: center;
+    color: #fff;
+}
+
+.titulo p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.interface h1 {
+    font-size: 30px;
+}
+
+.interface span {
+    color:  rgb(202, 146, 254);
+}
+
+section .formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #00000061;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+input:focus::placeholder { 
+    color: transparent 
+}
+
+form input:hover {
+    background-color: #00000061;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color:  rgb(202, 146, 254);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+    box-shadow:  rgb(202, 146, 254);
+    transform: scale(1.05);
+}
+

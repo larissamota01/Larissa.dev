@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px){
+
+    #caixa main  {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    main h2 {
+        font-size: 32px;
+    }
+
+    aside.txt p {
+        margin-top: 24px;
+        font-size: 15px;
+    }
+
+    .imagem img {
+        width: 18rem;
+    }
+
+    #Projetos  {
+        display: none;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop {
+        display: none;
+
+    } 
+
+    div#btn-menu {
+        display: block;
+    }
+
+
+    /* FOOTER */
+
+    footer .logo-email {
+        font-size: 15px;
+    }
+    
+}
+
